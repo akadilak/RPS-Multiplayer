@@ -75,7 +75,7 @@ $(document).on('ready', function() {
                 var waiting = $('.player' + key + ' > .waiting');
                 waiting.empty();
                 var $h1 = $('<h1>').text('Waiting for player ' + key);
-                var $i = $('<i>').addClass('fa fa-spinner fa-spin fa-one-large fa-fw')
+                var $i = $('<i>').addClass('fa fa-spinner fa-spin fa-one-large fa-fw');
                 waiting.append($h1).append($i);
                 // Empty score
                 $('.score' + key).text('');
@@ -419,7 +419,7 @@ $(document).on('ready', function() {
             } else if (player !== undefined) {
                 $p.text(playerName + ': ' + message);
             }
-            // If player 1 -> red text
+            // If player 1 -> reds text
             if (name[1] == playerName) {
                 $p.css('color','red');
             // If player 2 -> black text
